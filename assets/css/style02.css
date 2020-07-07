@@ -1,41 +1,77 @@
-/* container */
-.container {width: 1000px; margin: 0 auto;}
+/*  container  전체 가로 사이즈 설정*/
+.container {width: 1000px; margin: 0 auto; }
 
-/* row */
+/*  row  애플 기준 20px 좌우 여백 */
 .row {position: relative; margin: 0 20px;}
 
-/* header */
-#header .header-data {
-    font-weight: 600;
+/*header*/
+
+#header .header-data {  
+
     font-size: 12px;
+    font-weight: 600;
     padding-top: 30px;
     display: block;
     color: #a8a8a8;
+
+
 }
-#header .header-title {
-    font-weight: bold;
+#header .header-title{  
+
     font-size: 32px;
-    
+    font-weight: bold;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
-#header .header-id {
-    position: absolute; right: 0; bottom: 5px;
+#header .header-id{
+    position: absolute; right : 0; bottom: 10px;
+    /* 백그라운드 영역 지정 */
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    font-weight: 300;
-    font-size: 18px;
-    color: #fff;
-    /*text-align: center;
-    line-height: 40px; */
+    
+    /*백그라운드 기준으로 텍스트 가운데 정렬 예전 방법*/
+    /*line-height: 40px;
+    text-align: center;*/
+    
+    /*백그라운드 기준으로 텍스트 가운데 정렬 요즘 방법*/
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /*백그라운드 원형으로 변경*/
+    border-radius: 50%;
+    
+    /*폰트 영역*/
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    /*텍스트 대문자*/
     text-transform: uppercase;
-    background: linear-gradient(149.16deg, #A4A9B5 10.18%, rgba(164, 169, 181, 0) 81.31%), #C4C4C4;
+    background: linear-gradient(155.74deg, #A4A9B5 10.86%, rgba(164, 169, 181, 0) 84.47%), #C4C4C4;
+}
+
+/* best music */
+.bestM .best-title .bt-stit {  
+    font-size: 12px;
+    color: #da5e7c;
+    line-height: 1.67;
+    font-weight: 600;
+}
+.bestM .best-title .bt-tit{
+    font-size: 22px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.bestM .best-title .bt-desc{
+    font-size: 22px;
+    color: #818181;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 
-/* mediaquery */
-@media (max-width: 1020px){
-    .container {width: 100%;}
+/*미디어 커리*/
+@media(max-width: 1020px){
+    .container{width: 100%;}
 }
